@@ -1,0 +1,9 @@
+html, body {
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
