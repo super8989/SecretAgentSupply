@@ -3,7 +3,92 @@ html, body {
   font-size: 18px;
 }
 
+/* Header */
+
 header {
   background-color: black;
   color: white;
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container img {
+  height: 1.5rem;
+  margin: 0 1rem 0 0.5rem;
+}
+
+.container span {
+  padding: 0.66rem 0;
+  font-size: 1rem;
+}
+
+/* Main Banner */
+
+.main-banner {
+  background-image: url('../images/moto.jpeg');
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.headline {
+  background-color: black;
+  width: 20rem;
+  color: white;
+  position: relative;
+  top: 9em;
+  padding: 2em 3em;
+}
+
+.headline h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: .25rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 0;
+}
+
+/* Products */
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.product {
+  border: 4px solid black;
+  width: 30%;
+}
+
+.product-image {
+  height: 9rem;
+}
+
+.product-image img {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
