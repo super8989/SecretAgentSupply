@@ -8,10 +8,10 @@ html, body {
 header {
   background-color: black;
   color: white;
+  padding: 0.66rem 0.5rem;
 }
+
 .container {
-  display: flex;
-  align-items: center;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -69,6 +69,21 @@ nav ul {
   padding: 0.75em 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    text-align: center;
+    display: block;
+  }
+}
+
 /* Products */
 
 .products {
@@ -82,6 +97,7 @@ nav ul {
   width: 30%;
 }
 
+
 .product-image {
   display: flex;
   justify-content: center;
@@ -93,7 +109,6 @@ nav ul {
 
 .product-image img {
   height: 9rem;
-
 }
 
 
@@ -105,6 +120,18 @@ nav ul {
   color: white;
   padding: 0.5rem 0;
 }
+
+
+@media only screen and (max-width: 1024px){
+  .product {
+    width: 47%
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
 
 /* Business Info */
 .business-info {
@@ -123,6 +150,13 @@ nav ul {
   background-color: black;
   color: white;
   padding: 1rem 2rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .info {
+    width: 35%;
+  }
 }
 
 /* Footer */
